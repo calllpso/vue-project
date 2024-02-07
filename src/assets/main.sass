@@ -1,0 +1,206 @@
+// ***___ main ___*** \\
+body
+    margin: 0
+    height: 100vh
+    width: 100vw
+
+
+// $base-font-size: clamp(12px, 1rem, 5vh)
+$base-font-size: clamp(16px, 1rem, 32px)
+html
+    font-family: Roboto
+    font-weight: 400
+    font-size: $base-font-size
+    overflow: hidden !important
+ul, li, p
+    margin: 0
+    padding: 0
+ul
+    list-style-type: none
+
+
+// weights: 100, 300, 400, 500, 700, 900
+// weight 100
+@font-face 
+  font-family: 'Roboto'
+  src: url(./fonts/Roboto/woff2/Roboto-Thin.woff2) format('woff2')
+  font-style: normal
+  font-weight: 100
+@font-face 
+  font-family: 'Roboto'
+  src: url(./fonts/Roboto/woff2/Roboto-ThinItalic.woff2) format('woff2')
+  font-style: italic
+  font-weight: 100
+
+// weight 300
+@font-face 
+  font-family: 'Roboto'
+  src: url(./fonts/Roboto/woff2/Roboto-Light.woff2) format('woff2')
+  font-style: normal
+  font-weight: 300
+@font-face 
+  font-family: 'Roboto'
+  src: url(./fonts/Roboto/woff2/Roboto-LightItalic.woff2) format('woff2')
+  font-style: italic
+  font-weight: 300
+
+// weight 400
+@font-face 
+  font-family: 'Roboto'
+  src: url(./fonts/Roboto/woff2/Roboto-Regular.woff2) format('woff2')
+  font-style: normal
+  font-weight: 400
+@font-face 
+  font-family: 'Roboto'
+  src: url(./fonts/Roboto/woff2/Roboto-Italic.woff2) format('woff2')
+  font-style: italic
+  font-weight: 400
+
+// weight 500
+@font-face 
+  font-family: 'Roboto'
+  src: url(./fonts/Roboto/woff2/Roboto-Medium.woff2) format('woff2')
+  font-style: normal
+  font-weight: 500
+@font-face 
+  font-family: 'Roboto'
+  src: url(./fonts/Roboto/woff2/Roboto-MediumItalic.woff2) format('woff2')
+  font-style: italic
+  font-weight: 500
+
+// weight 700
+@font-face 
+  font-family: 'Roboto'
+  src: url(./fonts/Roboto/woff2/Roboto-Bold.woff2) format('woff2')
+  font-style: normal
+  font-weight: 700
+@font-face 
+  font-family: 'Roboto'
+  src: url(./fonts/Roboto/woff2/Roboto-BoldItalic.woff2) format('woff2')
+  font-style: italic
+  font-weight: 700
+
+// weight 900
+@font-face 
+  font-family: 'Roboto'
+  src: url(./fonts/Roboto/woff2/Roboto-Black.woff2) format('woff2')
+  font-style: normal
+  font-weight: 900
+@font-face 
+  font-family: 'Roboto'
+  src: url(./fonts/Roboto/woff2/Roboto-BlackItalic.woff2) format('woff2')
+  font-style: italic
+  font-weight: 900
+
+
+
+
+    
+
+
+
+// if 1rem = 16px
+// h1   - 32px
+// h2   - 24px 
+// h3   - 20px 
+// h4   - 16px 
+// h5   - 12px 
+// h6   - 8px 
+$h1: 2rem
+$h2: 1.5rem
+$h3: 1.25rem
+$h4: 1rem
+$h5: .75rem
+$h6: .5rem
+
+h1 
+  font-size: 2rem
+  margin: 0px
+h2 
+  font-size: 1.5rem
+  margin: 0px
+h3 
+  font-size: 1.25rem
+  margin: 0px
+h4 
+  font-size: 1rem
+  margin: 0px
+h5 
+  font-size: 0.75rem
+  margin: 0px
+h6 
+  font-size: 0.5rem
+  margin: 0px
+
+
+
+
+// ***___ sidebar ___*** \\
+
+//        size
+// font
+$font-size--sidebar__logo-row: .875rem
+$font-size--sidebar__maj-row: .875rem
+$font-size--sidebar__min-row: .75rem
+// height
+$height--sidebar__header: 2rem
+$height--sidebar__maj-row: 2.5rem
+$height--sidebar__min-row: 2.125rem
+// witdh
+$width--sidebar_expand_true: 13rem
+$width--sidebar__icon: 1.5em
+$width__icon_chevron: calc($width--sidebar__icon + .25rem)
+$width__icon_pin: calc($width--sidebar__icon - .25rem)
+// borders
+$size__border-left--sidebar: 2px
+$size__border-bottom--sidebar__min-row: 2px
+
+//      position
+// paddings
+$pd-right--sidebar__row-content: .5rem
+$pd-left--sidebar__row-content: calc($pd-right--sidebar__row-content - $size__border-left--sidebar) //mg-left + border = mg-right
+$pd-left--sidebar__logo: calc($pd-right--sidebar__row-content - $size__border-left--sidebar)
+$pd--sidebar__pin: calc(($width__icon_chevron - $width__icon_pin) / 2 )
+// margins
+$mg-left--sidebar__submenu: 1rem 
+$mg-left--sidebar__pin: $pd-right--sidebar__row-content   //such left padding with border
+// gaps
+$gap--sidebar: 1em
+// $gap--sidebar: 1rem
+
+//      background
+$bg--sidebar: #0a466a
+$bg--logo-container: #C11010
+$bg--sidebar__pin_hover: #600
+$bg--submenu: #0e354d
+$bg--sidebar__row_hover: #092637
+$bg--left-part-submenuImp: #051620
+// $bg--icon-chevron_active_true: #313030
+$bg--icon-chevron_active_true: #00314f
+//      color
+$clr__text--sidebar__row: #c9c9c9
+$clr__text_active--sidebar__row: white
+$clr__font--sidebar: white
+
+
+// calculated after
+// из ширины мажорных иконок отнимается ширина минорных иконок, по ширине (как и по длине) 
+// две стороны, поэтому результат делинтся на 2 и задается в padding
+$width--sidebar_expand_false: calc($width--sidebar__icon + (2 * $pd-right--sidebar__row-content) - $size__border-left--sidebar ) 
+
+
+// sidebar__row-content не понятно откуда добавляет 1px к sidebar__1-col
+
+
+// classes
+// for span col
+.icon-menu
+  display: flex
+  align-items: center
+
+
+
+// antd rewrite
+// .ant-select-selector 
+//   border-radius: 0
+

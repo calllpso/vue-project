@@ -1,0 +1,27 @@
+{
+  "name": "adaptive-design",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@microsoft/signalr": "^8.0.0",
+    "ant-design-vue": "^4.0.7",
+    "lodash": "^4.17.21",
+    "pinia": "^2.1.7",
+    "sass": "^1.68.0",
+    "sass-loader": "^13.3.2",
+    "vite-svg-loader": "^4.0.0",
+    "vue": "^3.3.4",
+    "vue-router": "^4.2.4",
+    "vuedraggable": "^2.24.3",
+    "vuetify": "^3.4.3"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.3.4",
+    "vite": "^4.4.9"
+  }
+}
